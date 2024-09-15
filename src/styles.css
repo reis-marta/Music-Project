@@ -8,9 +8,19 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 60px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
 section {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -20,7 +30,7 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 260px;
+  padding: 260px 0;
 }
 
 header h1 {
@@ -60,6 +70,40 @@ header a {
   display: inline-block;
 }
 
+main {
+  background-color: #fff;
+  color: #030414;
+}
+
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #030414;
+  margin: 0;
+}
+
+main h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  color: #030414;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #030414;
+  opacity: 0.9;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(10, 45, 97, 0.8),
@@ -69,13 +113,14 @@ footer {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
-.grid {
-  display: grid;
+.grid-3-columns-2-1-1 {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 60px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
 
 footer h3 {
@@ -134,5 +179,31 @@ footer a {
   header a {
     font-size: 12px;
     padding: 10px 16px;
+  }
+
+  main h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  footer h3 {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
