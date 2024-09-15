@@ -8,6 +8,11 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/Header-background-image02.png);
@@ -55,7 +60,60 @@ header a {
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(
+      rgba(10, 45, 97, 0.8),
+      rgba(10, 45, 97, 0.8)
+    ),
+    url(../images/footer-background-image.png);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  opacity: 0.9;
+}
+
+footer li {
+  list-style: none;
+  opacity: 0.9;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 30px;
   }
