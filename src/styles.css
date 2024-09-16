@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 60px;
@@ -17,10 +21,20 @@ body {
   max-width: 100%;
 }
 
+.video-responsive {
+  max-width: 100%;
+}
+
 section {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 100px 150px;
+}
+
+section.secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url(../images/SecondarySection-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -104,6 +118,76 @@ main p {
   opacity: 0.9;
 }
 
+.secondary h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.secondary h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 24px 32px;
+}
+
+.card h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.card h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #030414;
+  opacity: 0.9;
+}
+
+.secondary-button {
+  display: block;
+  color: white;
+  width: fill;
+  margin-top: 30px;
+  padding: 16px 32px;
+  border-radius: 100px;
+}
+
+.card a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #0a2d61;
+  text-decoration: none;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(10, 45, 97, 0.8),
@@ -113,6 +197,10 @@ footer {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-3-columns-2-1-1 {
